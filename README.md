@@ -1,25 +1,37 @@
-# 📰 Daily Insight
+# 📰 Daily Insight  
 
-A clean and modern Android News App built with **Kotlin**, **Jetpack Compose**, and **Material 3**.
+![Kotlin](https://img.shields.io/badge/Kotlin-1DA1F2?style=for-the-badge&logo=kotlin&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=android&logoColor=white)
+![Material 3](https://img.shields.io/badge/Material%203-6200EE?style=for-the-badge&logo=material-design&logoColor=white)
+
+A clean and modern **Android News App** built with **Kotlin**, **Jetpack Compose**, and **Material 3**.  
+It fetches live news data from the [NewsAPI.org](https://newsapi.org/) and displays it using MVVM architecture with StateFlow.
+
+---
 
 ## ✨ Features
-- MVVM architecture with Repository pattern
-- Live data from [NewsAPI.org](https://newsapi.org/)
-- Retrofit2 for network calls
-- StateFlow for reactive updates
-- Material 3 UI with dark & light themes
-- Fully built with Jetpack Compose
+- 🚀 **MVVM architecture** with Repository pattern  
+- 🧠 Reactive UI powered by **StateFlow**  
+- 🌙 Material 3 theming (Light & Dark Mode)  
+- 🔌 API integration with **Retrofit2 + Gson**  
+- 🧩 100% **Jetpack Compose** UI  
+- 📱 Fully responsive and smooth scroll design  
+
+---
 
 ## 🧠 Tech Stack
-- Kotlin
-- Jetpack Compose
-- ViewModel + StateFlow
-- Retrofit2 + Gson
-- Material 3
-- Clean Architecture
+| Layer | Technology |
+|-------|-------------|
+| Language | **Kotlin** |
+| UI | **Jetpack Compose**, **Material 3** |
+| Data | **Retrofit2**, **Gson** |
+| State Management | **ViewModel**, **StateFlow** |
+| Architecture | **MVVM + Repository Pattern** |
 
-## 🚀 Setup
-1. Get your API key from [NewsAPI.org](https://newsapi.org/)
-2. Open `NewsApi.kt` and replace the API key:
+---
+
+## ⚙️ Setup
+1. Get your free API key from [NewsAPI.org](https://newsapi.org/)  
+2. Add it inside your `NewsApi.kt` file:  
    ```kotlin
-   @Query("apiKey") apiKey: String = "c963766239d046c38f400c8319fa8465"
+   @Query("apiKey") apiKey: String = "YOUR_API_KEY"
